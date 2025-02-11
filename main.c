@@ -21,8 +21,13 @@ int main(){
     FILE *fptr;
     char booktitle[5000], authorname[5000];
 
-    printf("Welcome to Book Tracking!\n");
-
+    printf("------------------------------------------------------------------------------\n");
+    printf(" ____    ____    ____         \n");
+    printf("|    \\  /    \\  /    \\  | /\n");
+    printf("|____/  |    |  |    |  |/\n");
+    printf("|    \\  |    |  |    |  |\\\n");
+    printf("|____/  \\____/  \\____/  | \\\n");
+    printf("------------------------------------------------------------------------------\n");
     while(userchoice != 4){
 
         print_shelf_menus();
@@ -40,7 +45,8 @@ int main(){
             printf("Please enter the book tile and the author's name in the format title,name: ");
             fgets(authorname, sizeof(authorname), stdin);
 
-            fprintf(fptr, "%s\n", authorname);
+            fprintf(fptr, "%s", authorname);
+            fprintf(fptr, "\n");
 
             fclose(fptr);
 
@@ -53,7 +59,8 @@ int main(){
             printf("Please enter the book tile and the author's name in the format title,name: ");
             fgets(authorname, sizeof(authorname), stdin);
 
-            fprintf(fptr, "%s\n", authorname);
+            fprintf(fptr, "%s", authorname);
+            fprintf(fptr, "\n");
 
             fclose(fptr);
         }else if(userchoice == 3){
@@ -65,7 +72,8 @@ int main(){
             printf("Please enter the book tile and the author's name in the format title,name: ");
             fgets(authorname, sizeof(authorname), stdin);
 
-            fprintf(fptr, "%s\n", authorname);
+            fprintf(fptr, "%s", authorname);
+            fprintf(fptr, "\n");
 
             fclose(fptr);
 
